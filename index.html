@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../weatherapp/style.css" type="text/css" />
+<head>
+<link rel="stylesheet" href="../weatherapp/style.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
 <link href="https://cdnjs.com/libraries/weather-icons">
-    </head>
+<link rel="shortcut icon" href="../weatherapp/weather.png" type="image/x-icon"
+</head>
     
 <body>
-<div class="container" id="weather">
-    <p id="data"></p>
-  <h1 class="app" style="font-family: 'Open Sans', sans-serif;">Weather App</h1>
-  <div>
-  <h2 class="app">Your Location</h2>
+    <div class="container" style="padding: 15px">
+      <div class="weather-box">
+  <div class="title"><h1 class="app" style="font-family: 'Open Sans', sans-serif;">The Weather</h1></div>
+  <div class="subtitle"></div>
+  <div class="weather-info">
+    <div class="info"><h1 id="location"></h1></div>
+    <div class="info"><h1 id="temperature"></h1>
+      <span><h1 id="temperature-num"></h1></span>
+      <span>&deg;</span>
+      <span id="temperature-scale" class="pointer" onmouseover="" style="cursor: pointer">C</span>
+    </div>
+    <div id="weather-condition" class="info"></div>
+    <div id="weather-icon" class="info"></div>
+  </div>
   </div>
 </div>
 
